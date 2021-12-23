@@ -183,7 +183,10 @@ calibrate_carbon         <- function(inname,
     # one last invocation of hdf5 close all, for good luck
     rhdf5::h5closeAll()
   } else {
-    return(cal_df)
+    rpt <- list()
+    rpt$cal_df <- cal_df
+    rpt$ciso_subset_cal <- cios_subset_cal
+    return(rpt)
   }
 
 }
