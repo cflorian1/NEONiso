@@ -182,6 +182,8 @@ calibrate_carbon         <- function(inname,
     
     # one last invocation of hdf5 close all, for good luck
     rhdf5::h5closeAll()
+  } else {
+    return(cal_df)
   }
 
 }
