@@ -185,7 +185,7 @@ calibrate_carbon         <- function(inname,
   } else {
     rpt <- list()
     rpt$cal_df <- cal_df
-    rpt$ciso_subset_cal <- cios_subset_cal
+    rpt$ciso_subset_cal <- ciso_subset_cal
     return(rpt)
   }
 
